@@ -20,6 +20,7 @@ class OperationsHelper(BasePage):
         super().__init__(driver)
         self.locator = None
 
+    # ENTER_TEXT
     def enter_text_into_field(self, locator, word, description=None):
         if description:
             element_name = description
@@ -38,7 +39,7 @@ class OperationsHelper(BasePage):
             return False
         return True
 
-    # ENTER_TEXT
+    # ENTER_TEXT locator methods
     def enter_login(self, word):
         self.enter_text_into_field(TestSearchLocators.ids["LOCATOR_LOGIN_FIELD"], word, description="login form")
 
@@ -63,14 +64,14 @@ class OperationsHelper(BasePage):
         logging.debug(f"Element {element_name} was clicked")
         return True
 
+    # CLICK locator methods
     def click_login_button(self):
         self.click_button(TestSearchLocators.ids["LOCATOR_LOGIN_BTN"], description="login button")
 
     def click_about_link(self):
         self.click_button(TestSearchLocators.ids["LOCATOR_ABOUT_LINK"], description="about link")
 
-    # GET_METHODS
-
+    # GET_VALUE
     def get_value_from_element(self, locator, description=None):
         if description:
             element_name = description
@@ -87,5 +88,6 @@ class OperationsHelper(BasePage):
             logging.exception(f"Exception while getting value for {element_name}")
             return None
 
-    def get_property_value_header(self):
-        return self.get_value_from_element(TestSearchLocators.ids["LOCATOR_ABOUT_HEADER"], description="value")
+    # GET_VALUE locator methods
+    def get_property_value_title(self):
+        return self.get_value_from_element(TestSearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="value")
