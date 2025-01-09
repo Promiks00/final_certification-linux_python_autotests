@@ -38,8 +38,8 @@ class TestPositive:
         about_text = testpage.get_about_text()
         assert about_text == "About Page"
 
-    def test_step4_get_value_of_title_on_page_About(self,browser):
+    def test_step4_get_fontsize_value_of_title_on_page_About(self,browser):
         logging.info("Test4 Starting")
         testpage = OperationsHelper(browser)
-        value = testpage.get_about_value()
+        value = testpage.get_property_value_title()
         assert value == "32px", f"Expected font-size value of title on page 'About' as '32px', but got '{value}'"

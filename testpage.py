@@ -72,6 +72,22 @@ class OperationsHelper(BasePage):
         self.click_button(TestSearchLocators.ids["LOCATOR_ABOUT_LINK"], description="about link")
 
     # GET_VALUE
+    def get_text_from_element(self, locator, description=None):
+        if description:
+            element_name = description
+        else:
+            element_name = locator
+        field = self.find_element(locator, time=5)
+        if not field:
+            return None
+        try:
+            text = field.text
+        except:
+            logging.exception(f"Exception while getting text from element {element_name}")
+            return None
+        logging.debug(f"Found text {text} in element {element_name}")
+        return text
+
     def get_value_from_element(self, locator, description=None):
         if description:
             element_name = description
@@ -89,5 +105,14 @@ class OperationsHelper(BasePage):
             return None
 
     # GET_VALUE locator methods
+    def get_error_text(self):
+        return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_ERROR_FIELD"], description="error field")
+
+    def get_user_text(self):
+        return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_HELLO"], description="Hello, [username]")
+
+    def get_about_text(self):
+        return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="About us")
+
     def get_property_value_title(self):
         return self.get_value_from_element(TestSearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="value")
