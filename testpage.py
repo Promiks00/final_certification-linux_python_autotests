@@ -115,4 +115,4 @@ class OperationsHelper(BasePage):
         return self.get_text_from_element(TestSearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="About us")
 
     def get_property_value_title(self):
-        return self.get_value_from_element(TestSearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="value")
+        return self.get_value_from_element(TestSearchLocators.ids["LOCATOR_ABOUT_TITLE"], description="title_of_page_About")
