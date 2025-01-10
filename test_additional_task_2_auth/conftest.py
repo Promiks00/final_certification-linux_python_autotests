@@ -8,7 +8,8 @@ with open("./config.yaml") as f:
 
 @pytest.fixture()
 def login():
-    login = requests.post(data["address"] + "gateway/login",
+    login = requests.post(f"{data["address"]}/gateway/login",
                           data={"username": data["username"], "password": data["password"]})
     token = login.json()["token"]
-    return token
+    user_id = login.json()["id"]
+    return token, user_id

@@ -1,8 +1,0 @@
-2025-01-10 00:59:21 INFO ====== WebDriver manager ======
-2025-01-10 00:59:21 INFO Get LATEST chromedriver version for google-chrome
-2025-01-10 00:59:22 INFO Get LATEST chromedriver version for google-chrome
-2025-01-10 00:59:22 INFO Driver [/home/user/.wdm/drivers/chromedriver/linux64/131.0.6778.264/chromedriver-linux64/chromedriver] found in cache
-2025-01-10 00:59:23 INFO Test1 Starting
-2025-01-10 00:59:31 INFO Test2 Starting
-2025-01-10 00:59:46 INFO Test3 Starting
-2025-01-10 00:59:47 INFO Test4 Starting
