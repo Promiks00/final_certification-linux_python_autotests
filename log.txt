@@ -1,22 +1,22 @@
-2025-01-10 07:57:36 INFO Sending request to fetch profile for user_id 42086...
-2025-01-10 07:57:40 INFO Received response for user_id 42086. Checking username...
-2025-01-10 07:57:40 INFO Test passed, username matches.
-2025-01-10 07:57:40 INFO Site check started...
-2025-01-10 07:58:21 INFO Executed command: nikto -h https://test-stand.gb.ru/ -ssl -Tuning 4
-2025-01-10 07:58:21 INFO Checking complete
-2025-01-10 07:58:21 INFO Setting up Chrome browser...
-2025-01-10 07:58:21 INFO ====== WebDriver manager ======
-2025-01-10 07:58:21 INFO Get LATEST chromedriver version for google-chrome
-2025-01-10 07:58:21 INFO Get LATEST chromedriver version for google-chrome
-2025-01-10 07:58:22 INFO Driver [/home/user/.wdm/drivers/chromedriver/linux64/131.0.6778.264/chromedriver-linux64/chromedriver] found in cache
-2025-01-10 07:58:26 INFO Chrome browser started successfully.
-2025-01-10 07:58:26 INFO Test1 Starting
-2025-01-10 07:58:35 INFO Test1 Completed
-2025-01-10 07:58:35 INFO Test2 Starting
-2025-01-10 07:58:51 INFO Test2 Completed
-2025-01-10 07:58:51 INFO Test3 Starting
-2025-01-10 07:58:52 INFO Test3 Completed
-2025-01-10 07:58:52 INFO Test4 Starting
-2025-01-10 07:58:52 INFO Test4 Completed
-2025-01-10 07:58:52 INFO Closing the Chrome browser...
-2025-01-10 07:58:52 INFO Chrome browser closed.
+2025-01-10 08:41:15 INFO Sending request to fetch profile for user_id 42086...
+2025-01-10 08:41:19 INFO Received response for user_id 42086. Checking username...
+2025-01-10 08:41:19 INFO Test passed, username matches.
+2025-01-10 08:41:19 INFO Site check started...
+2025-01-10 08:42:01 INFO Executed command: nikto -h https://test-stand.gb.ru/ -ssl -Tuning 4
+2025-01-10 08:42:01 INFO Checking complete
+2025-01-10 08:42:01 INFO Setting up Chrome browser...
+2025-01-10 08:42:01 INFO ====== WebDriver manager ======
+2025-01-10 08:42:01 INFO Get LATEST chromedriver version for google-chrome
+2025-01-10 08:42:01 INFO Get LATEST chromedriver version for google-chrome
+2025-01-10 08:42:01 INFO Driver [/home/user/.wdm/drivers/chromedriver/linux64/131.0.6778.264/chromedriver-linux64/chromedriver] found in cache
+2025-01-10 08:42:03 INFO Chrome browser started successfully.
+2025-01-10 08:42:03 INFO Test1 Starting
+2025-01-10 08:42:12 INFO Test1 Completed
+2025-01-10 08:42:12 INFO Test2 Starting
+2025-01-10 08:42:29 INFO Test2 Completed
+2025-01-10 08:42:29 INFO Test3 Starting
+2025-01-10 08:42:30 INFO Test3 Completed
+2025-01-10 08:42:30 INFO Test4 Starting
+2025-01-10 08:42:30 INFO Test4 Completed
+2025-01-10 08:42:30 INFO Closing the Chrome browser...
+2025-01-10 08:42:30 INFO Chrome browser closed.
