@@ -1,4 +1,4 @@
-from checkers import checkout
+from .checkers import checkout
 import logging
 import yaml
 
