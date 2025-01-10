@@ -1,0 +1,7 @@
+2025-01-10 07-40-42 DEBUG Starting new HTTPS connection (1): test-stand.gb.ru:443
+2025-01-10 07-40-47 DEBUG https://test-stand.gb.ru:443 "POST /gateway/login HTTP/1.1" 200 235
+2025-01-10 07-40-47 INFO Sending request to fetch profile for user_id 42086...
+2025-01-10 07-40-47 DEBUG Starting new HTTPS connection (1): test-stand.gb.ru:443
+2025-01-10 07-40-51 DEBUG https://test-stand.gb.ru:443 "GET /api/users/profile/42086 HTTP/1.1" 200 414
+2025-01-10 07-40-51 INFO Received response for user_id 42086. Checking username...
+2025-01-10 07-40-51 INFO Test passed, username matches.
