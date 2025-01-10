@@ -2,7 +2,7 @@ from .checkers import checkout
 import logging
 import yaml
 
-with open("./data.yaml") as f:
+with open("./test_additiontal_task_1_nikto/data.yaml") as f:
     data = yaml.safe_load(f)
 
 def test_step01():

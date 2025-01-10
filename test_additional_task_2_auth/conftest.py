@@ -2,7 +2,7 @@ import pytest
 import yaml
 import requests
 
-with open("./config.yaml") as f:
+with open("./test_additional_task_2_auth/config.yaml") as f:
     data = yaml.safe_load(f)
 
 
