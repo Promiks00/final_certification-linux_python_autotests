@@ -9,7 +9,6 @@ def checkout(cmd, text):
         # Логируем результат выполнения
         logging.info(f"Executed command: {cmd}")
         logging.debug(f"STDOUT: {result.stdout.strip()}")
-        logging.debug(f"STDERR: {result.stderr.strip()}")
 
         if text in result.stdout and result.returncode == 0:
             return True
