@@ -10,7 +10,7 @@ passwd = data["password"]
 site = data["address"]
 
 class TestNegative:
-    def test_step1_auth_negative(self, browser):
+    def test_step01_auth_negative(self, browser):
         logging.info("Test1 Starting")
         testpage = OperationsHelper(browser)
         testpage.go_to_site()
@@ -23,7 +23,7 @@ class TestNegative:
 
 
 class TestPositive:
-    def test_step2_auth_positive(self, browser):
+    def test_step02_auth_positive(self, browser):
         logging.info("Test2 Starting")
         testpage = OperationsHelper(browser)
         testpage.enter_login(name)
@@ -33,7 +33,7 @@ class TestPositive:
         assert user_text == f"Hello, {name}"
         logging.info("Test2 Completed")
 
-    def test_step3_click_about_link(self, browser):
+    def test_step03_click_about_link(self, browser):
         logging.info("Test3 Starting")
         testpage = OperationsHelper(browser)
         testpage.click_about_link()
@@ -41,7 +41,7 @@ class TestPositive:
         assert about_text == "About Page"
         logging.info("Test3 Completed")
 
-    def test_step4_get_fontsize_value_of_title_on_page_About(self,browser):
+    def test_step04_get_fontsize_value_of_title_on_page_About(self,browser):
         logging.info("Test4 Starting")
         testpage = OperationsHelper(browser)
         value = testpage.get_property_value_title()
